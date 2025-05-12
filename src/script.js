@@ -40,7 +40,7 @@ else if (tipoVinho == "rosé" || tipoVinho == "rose") {
 } 
 while (tipoVinho == '') {
     alert("Tipo inválido! Só aceitamos: Tinto, Branco ou Rosé... Tente de novo.");
-    var tipoVinho = prompt('Por favor, digite o tipo do vinho:');
+    var tipoVinho = prompt('Por favor, digite o tipo do vinho:')
 }
 
 var safraVinho = prompt('Qual o ano do vinho?'); 
