@@ -84,7 +84,7 @@ console.log("Classificação do vinho: " + classificacao);
  console.log("Situação que estoque se encontra: " + estoque);
  console.log("");
 
- repetir = confirm("Deseja inserir outro vinho?");
+ repetir = confirm("Para inserir outro vinho clique em ''ok'' ");
 }
 
 let i;
