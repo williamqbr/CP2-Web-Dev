@@ -1,6 +1,6 @@
 var nome = prompt("Digite seu nome:");
 
-while (nome === "") {
+while (nome == "") {
     alert("Nome obrigatório!");
     nome = prompt("Digite seu nome:");
 }
@@ -9,7 +9,7 @@ console.log('nome do usuário: ' + nome);
 
 var sobrenome = prompt("Digite seu sobrenome:");
 
-while (sobrenome === "") {
+while (sobrenome == "") {
     alert("Sobrenome obrigatório!");
     sobrenome = prompt("Digite seu sobrenome:");
 }
@@ -32,13 +32,13 @@ while (repetir) {
 
   var tipoVinho = prompt('Qual o tipo do vinho? (Tinto, Branco ou Rosé)');
 
-  if (tipoVinho === "tinto") {
+  if (tipoVinho == "tinto") {
     alert("Vinho Tinto");
   } 
-  else if (tipoVinho === "branco") {
+  else if (tipoVinho == "branco") {
     alert("Vinho Branco");
   } 
-  else if (tipoVinho === "rosé" || tipoVinho === "rose") { 
+  else if (tipoVinho == "rosé" || tipoVinho == "rose") { 
     alert("Vinho Rosé");
   } 
   else {
@@ -68,7 +68,7 @@ while (repetir) {
 
  var quantidadeVinho = prompt('Qual sua quantidade no estoque?');
 
-  while (quantidadeVinho === "" || isNaN(quantidadeVinho)) {
+  while (quantidadeVinho == "" || isNaN(quantidadeVinho)) {
     quantidadeVinho = prompt("Digite uma quantidade válida:");
   }
 
