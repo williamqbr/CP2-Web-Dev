@@ -29,6 +29,7 @@ while (repetir) {
     alert("O nome do vinho é obrigatório");
     var nomeVinho = prompt("Insira o nome do vinho: ");
   }
+console.log("Nome do vinho: " + nomeVinho);
 
   var tipoVinho = prompt('Qual o tipo do vinho? (Tinto, Branco ou Rosé)');
 
@@ -41,6 +42,8 @@ while (repetir) {
   else if (tipoVinho == "rosé" || tipoVinho == "rose") { 
     alert("Vinho Rosé");
   } 
+console.log("Tipo do vinho: " + tipoVinho);
+    
   else {
     alert("Tipo inválido! Só aceitamos: Tinto, Branco ou Rosé... Tente de novo.");
     var tipoVinho = prompt('Por favor, digite o tipo do vinho:')
@@ -63,8 +66,10 @@ while (repetir) {
   else {
     classificacao = "Vinho antigo";
   }
+console.log("Sua Safra: " + safraVinho);
 
  alert("Classificação do vinho: " + classificacao);
+console.log("Classificação do vinho: " + classificacao);
 
  var quantidadeVinho = prompt('Qual sua quantidade no estoque?');
 
@@ -84,10 +89,6 @@ while (repetir) {
  contadorCadastros++;
 
  console.log("Nº do Cadastro " + contadorCadastros);
- console.log("Nome do vinho: " + nomeVinho);
- console.log("Tipo do vinho: " + tipoVinho);
- console.log("Sua Safra: " + safraVinho);
- console.log("Classificação do vinho: " + classificacao);
  console.log("Quantidade no estoque: " + quantidadeVinho);
  console.log("Situação que estoque se encontra: " + estoque);
  console.log("");
