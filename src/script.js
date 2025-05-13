@@ -110,4 +110,4 @@ alert("Quantidade de vinhos com estoque BAIXO: " + contadorEstoqueBaixo);
 alert("Safra mais antiga: " + vinhoMaisAntigo);
 
 console.log("Vinhos com estoque baixo: " + contadorEstoqueBaixo);
-console.log("Safra " + vinhoMaisAntigo );
+console.log("Menor Safra: " + vinhoMaisAntigo );
