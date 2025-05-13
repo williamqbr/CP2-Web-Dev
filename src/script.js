@@ -73,7 +73,7 @@ while (repetir) {
 
  alert("Classificação do vinho: " + classificacao);
 
- var quantidadeVinho = prompt('Qual sua quantidade no estoque?');
+ var quantidadeVinho = prompt('Qual sua quantidade em estoque?');
 
   while (quantidadeVinho === "" || isNaN(quantidadeVinho)) {
     quantidadeVinho = prompt("Digite uma quantidade válida:");
