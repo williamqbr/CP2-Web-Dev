@@ -1,6 +1,5 @@
-Github PAges: https://williamqbr.github.io/CP2-Web-Dev/
-Victor Henry Melchior Camara  RM: 564222
-João Vitor Reis da Silva  RM: 563115
-Daniel Duarte  RM: 562508
-William Queiroz  RM: 565032
-Erick Gabriel Ferreira do Santos:  RM: 565144
+Sistema básico para cadastro e análise de vinhos artesanais da Vinheira Agnello.
+
+Lista de integrantes: João Vitor Reis Silva, Victor Henry Melchior Camara, Erick Gabriel Ferreira dos Santos, William Queiroz de Araújo, Daniel Duarte dos Santos.
+
+Link github pages: https://williamqbr.github.io/CP2-Web-Dev/
