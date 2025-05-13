@@ -85,7 +85,10 @@ console.log("Classificação do vinho: " + classificacao);
  console.log("");
 
  repetir = confirm("Deseja inserir outro vinho?");
+}
 
+for (let i = 1; i <= contadorCadastros; i++) {
+  console.log("Vinho nº " + i + " cadastrado com sucesso.");
 }
 
 alert('Cadastro finalizado! Foram cadastrados ' + contadorCadastros + ' vinho(s). Veja os detalhes no console');
