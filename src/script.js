@@ -94,13 +94,13 @@ while (repetir) {
  console.log("Nº do Cadastro " + contadorCadastros);
  console.log("Nome do vinho: " + nomeVinho);
  console.log("Tipo do vinho: " + tipoVinho);
- console.log("Sua Safra: " + safraVinho);
+ console.log("Safra do vinho: " + safraVinho);
  console.log("Classificação do vinho: " + classificacao);
- console.log("Quantidade no estoque: " + quantidadeVinho);
- console.log("Situação que estoque se encontra: " + estoque);
+ console.log("Quantidade em estoque: " + quantidadeVinho);
+ console.log("Situação em que o estoque se encontra: " + estoque);
  console.log("");
 
- repetir = confirm("Deseja inserir outro vinho?");
+ repetir = confirm("Deseja inserir um novo vinho?");
 
 }
 
