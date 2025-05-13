@@ -36,11 +36,11 @@ console.log("Nome do vinho: " + nomeVinho);
   else if (tipoVinho == "rosé" || tipoVinho == "rose") { 
     alert("Vinho Rosé");
   } 
-console.log("Tipo do vinho: " + tipoVinho);
- else {
+  else {
     alert("Tipo inválido! Só aceitamos: Tinto, Branco ou Rosé... Tente de novo.");
     var tipoVinho = prompt('Por favor, digite o tipo do vinho:')
   }
+console.log("Tipo do vinho: " + tipoVinho);
 
  var safraVinho = prompt('Qual o ano do vinho?'); 
   while (safraVinho === "" || isNaN(safraVinho)) {
