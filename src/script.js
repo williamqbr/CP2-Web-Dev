@@ -52,7 +52,7 @@ while (repetir) {
  var safraVinho = prompt('Qual o ano do vinho?'); 
 
   while (safraVinho === "" || isNaN(safraVinho)) {
-    safraVinho = prompt("Digite um ano válido para a safra:");
+    safraVinho = prompt("Digite um ano válido:");
   }
  safraVinho = parseInt(safraVinho);
 
