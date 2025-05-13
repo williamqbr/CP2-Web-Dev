@@ -87,7 +87,8 @@ console.log("Classificação do vinho: " + classificacao);
  repetir = confirm("Deseja inserir outro vinho?");
 }
 
-for (let i = 1; i <= contadorCadastros; i++) {
+let i;
+for (i = 1; i <= contadorCadastros; i++) {
   console.log("Vinho nº " + i + " cadastrado com sucesso.");
 }
 
