@@ -96,4 +96,4 @@ while (repetir) {
 
 }
 
-alert('Cadastro finalizado! Foram cadastrados ' + cont2 + ' vinho(s). Veja os detalhes no console');
+alert('Cadastro finalizado! Foram cadastrados ' + contadorCadastros + ' vinho(s). Veja os detalhes no console');
