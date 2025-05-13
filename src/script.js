@@ -1,15 +1,19 @@
 var nome = prompt("Digite seu nome:");
-while (nome == "") {
+
+while (nome === "") {
     alert("Nome obrigatório!");
     nome = prompt("Digite seu nome:");
 }
+
 console.log('nome do usuário: ' + nome);
 
 var sobrenome = prompt("Digite seu sobrenome:");
-while (sobrenome == "") {
+
+while (sobrenome === "") {
     alert("Sobrenome obrigatório!");
     sobrenome = prompt("Digite seu sobrenome:");
 }
+
 console.log('sobrenome do usuário: ' + sobrenome);
 
 alert('Olá, ' + nome + " " + sobrenome + '! Agora vamos aos vinhos...');
@@ -17,36 +21,44 @@ alert('Olá, ' + nome + " " + sobrenome + '! Agora vamos aos vinhos...');
 let repetir = true;  //while
 let contadorCadastros = 0; //contador
 
+var contadorEstoqueBaixo = 0; 
+var vinhoMaisAntigo = null;
+
 while (repetir) {
-    var nomeVinho = prompt('Qual o nome do vinho?');
+  
+ var nomeVinho = prompt('Qual o nome do vinho?');
 
   while(nomeVinho == "") {
     alert("O nome do vinho é obrigatório");
     var nomeVinho = prompt("Insira o nome do vinho: ");
   }
-console.log("Nome do vinho: " + nomeVinho);
 
   var tipoVinho = prompt('Qual o tipo do vinho? (Tinto, Branco ou Rosé)');
-  if (tipoVinho == "tinto") {
+
+  if (tipoVinho === "tinto") {
     alert("Vinho Tinto");
   } 
-  else if (tipoVinho == "branco") {
+  else if (tipoVinho === "branco") {
     alert("Vinho Branco");
   } 
-  else if (tipoVinho == "rosé" || tipoVinho == "rose") { 
+  else if (tipoVinho === "rosé" || tipoVinho === "rose") { 
     alert("Vinho Rosé");
   } 
   else {
     alert("Tipo inválido! Só aceitamos: Tinto, Branco ou Rosé... Tente de novo.");
     var tipoVinho = prompt('Por favor, digite o tipo do vinho:')
   }
-console.log("Tipo do vinho: " + tipoVinho);
 
  var safraVinho = prompt('Qual o ano do vinho?'); 
+
   while (safraVinho === "" || isNaN(safraVinho)) {
     safraVinho = prompt("Digite um ano válido para a safra:");
   }
  safraVinho = parseInt(safraVinho);
+
+ if (vinhoMaisAntigo === null || safraVinho < vinhoMaisAntigo) {
+    vinhoMaisAntigo = safraVinho;
+ }
 
  var classificacao;                                      
   if (safraVinho >= 2020) {
@@ -58,13 +70,12 @@ console.log("Tipo do vinho: " + tipoVinho);
   else {
     classificacao = "Vinho antigo";
   }
-console.log("Sua Safra: " + safraVinho);
 
  alert("Classificação do vinho: " + classificacao);
-console.log("Classificação do vinho: " + classificacao);
 
  var quantidadeVinho = prompt('Qual sua quantidade no estoque?');
-  while (quantidadeVinho == "" || isNaN(quantidadeVinho)) {
+
+  while (quantidadeVinho === "" || isNaN(quantidadeVinho)) {
     quantidadeVinho = prompt("Digite uma quantidade válida:");
   }
 
@@ -73,6 +84,7 @@ console.log("Classificação do vinho: " + classificacao);
  var estoque = "Estoque adequado";
   if (quantidadeVinho <= 5) {
     estoque = "Estoque BAIXO";
+    contadorEstoqueBaixo++;
   }
 
  alert("Situação do estoque: " + estoque);
@@ -80,16 +92,22 @@ console.log("Classificação do vinho: " + classificacao);
  contadorCadastros++;
 
  console.log("Nº do Cadastro " + contadorCadastros);
+ console.log("Nome do vinho: " + nomeVinho);
+ console.log("Tipo do vinho: " + tipoVinho);
+ console.log("Sua Safra: " + safraVinho);
+ console.log("Classificação do vinho: " + classificacao);
  console.log("Quantidade no estoque: " + quantidadeVinho);
  console.log("Situação que estoque se encontra: " + estoque);
  console.log("");
 
- repetir = confirm("Para inserir outro vinho clique em ''ok'' ");
-}
+ repetir = confirm("Deseja inserir outro vinho?");
 
-let i;
-for (i = 1; i <= contadorCadastros; i++) {
-  console.log("Vinho nº " + i + " cadastrado com sucesso.");
 }
 
 alert('Cadastro finalizado! Foram cadastrados ' + contadorCadastros + ' vinho(s). Veja os detalhes no console');
+
+alert("Quantidade de vinhos com estoque BAIXO: " + contadorEstoqueBaixo);
+alert("Safra mais antiga: " + vinhoMaisAntigo);
+
+console.log("Vinhos com estoque baixo: " + contadorEstoqueBaixo);
+console.log("Safra " + vinhoMaisAntigo );
